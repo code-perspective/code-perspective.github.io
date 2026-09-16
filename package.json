@@ -1,10 +1,10 @@
 {
-  "name": "academic-pages",
+  "name": "code-perspective-site",
   "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "description": "Optional JavaScript build scripts for Shruthi Gorantala's website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "https://github.com/code-perspective/code-perspective.github.io"
   },
   "keywords": [
     "jekyll",
@@ -16,10 +16,7 @@
     "Robert Zupko"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
-  },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://code-perspective.github.io",
   "engines": {
     "node": ">= 0.10.0"
   },
