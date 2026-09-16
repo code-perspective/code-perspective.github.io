@@ -2,7 +2,7 @@
 title: "HEIR: A Universal Compiler for Homomorphic Encryption"
 collection: publications
 category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-3
+permalink: /publication/2025-08-14-HEIR-Compiler
 excerpt: 'Homomorphic Encryption Intermediate Representation (HEIR), a unified approach to building homomorphic encryption (HE) compilers'
 date: 2025-08-14
 venue: 'github/google/heir'

@@ -1,0 +1,44 @@
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="publication-list__item talk-list__item">
+  <article class="publication-entry talk-entry" itemscope itemtype="https://schema.org/ScholarlyArticle">
+    <time class="publication-entry__date talk-entry__date" datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">
+      <span class="talk-entry__month">{{ post.date | date: '%b' }}</span>
+      <span class="talk-entry__year">{{ post.date | date: '%Y' }}</span>
+    </time>
+
+    <div class="publication-entry__body talk-entry__body">
+      <h2 class="publication-entry__title talk-entry__title" itemprop="headline">
+        {{ title }}
+      </h2>
+
+      {% if post.venue %}
+        <p class="publication-entry__meta talk-entry__meta">
+          <span>Published in <i itemprop="publisher">{{ post.venue }}</i></span>
+        </p>
+      {% endif %}
+
+      {% if post.excerpt %}
+        <p class="publication-entry__description talk-entry__description" itemprop="description">{{ post.excerpt | markdownify | strip_html | strip_newlines }}</p>
+      {% endif %}
+
+      {% if post.paperurl or post.slidesurl or post.resources %}
+        <nav class="publication-entry__links talk-entry__links" aria-label="Resources for {{ post.title | escape }}">
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{% if post.category == 'patents' %}Patent{% else %}Paper{% endif %}</a>
+          {% endif %}
+          {% if post.slidesurl %}
+            <a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer">Slides</a>
+          {% endif %}
+          {% for resource in post.resources %}
+            <a href="{{ resource.url }}" target="_blank" rel="noopener noreferrer">{{ resource.label }}</a>
+          {% endfor %}
+        </nav>
+      {% endif %}
+    </div>
+  </article>
+</div>
