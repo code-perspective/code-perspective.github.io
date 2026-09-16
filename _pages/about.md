@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Im currently a Software Engineer at Google. I co-founded the [FHE Transpiler](https://github.com/google/fully-homomorphic-encryption) project and FHE team at Google. I currently work on [HEIR](https://github.com/google/heir/), [Jaxite](https://github.com/google/jaxite) and related technologies  to bring FHE to practical use on hardware accelerators such as TPUs, FPGAs, ASICs and Photonics. Im interested in making next generation crytography easy to use with compilers and hardware. I love working at the intersection of Machine Learning and Cryptography and some medical things along the way.
+Im currently a Software Engineer at Google's Private Computing team working at the intersection of AI and cryptography. I co-founded the FHE team at Google and lauched [FHE Transpiler](https://github.com/google/fully-homomorphic-encryption), [HEIR](https://github.com/google/heir/), [Jaxite](https://github.com/google/jaxite) and related technologies  to bring FHE to practical use on hardware accelerators such as TPUs, FPGAs, ASICs and Photonics. Im interested in making next generation crytography easy to use with compilers and hardware. I love working at the intersection of Machine Learning and Cryptography and some medical things along the way.
 
 I enjoy attending and being part of FHE conferences i.e. [fhe.org](https://fhe.org/), [Workshop of Applied Homomorphic Encryption](https://homomorphicencryption.org/workshops/) and [Homomorphic Encryption Standardization Workshop](https://homomorphicencryption.org/standards-meetings/). Im on the [advisory board](https://fhe.org/advisory-board/) for fhe.org.
 
