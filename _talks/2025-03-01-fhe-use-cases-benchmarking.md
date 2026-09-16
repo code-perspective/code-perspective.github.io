@@ -1,7 +1,6 @@
 ---
 title: "FHE Use Cases and Benchmarking"
-collection: talks
-type: "Working Group Session Lead"
+kind: "Working Group Session Lead"
 permalink: /talks/2025-03-01-fhe-use-cases-benchmarking
 venue: "8th HomomorphicEncryption.org Standards Meeting"
 date: 2025-03-01

@@ -19,7 +19,7 @@ layout: default
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.description %}<meta itemprop="description" content="{{ page.description | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
     {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
 
@@ -35,13 +35,21 @@ layout: default
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        {% if page.talk_type %}<p>{{page.talk_type}} at {{ page.venue }},  {{page.location}} {% endif %}
+        {% if page.kind %}<p>{{ page.kind }} at {{ page.venue }}, {{ page.location }}</p>{% endif %}
 
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
         {{ content }}
+        {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+        {% if page.event_url or page.slides_url or page.video_url %}
+          <nav class="timeline-entry__links" aria-label="Resources for {{ page.title | escape }}">
+            {% if page.event_url %}<a href="{{ page.event_url }}" target="_blank" rel="noopener noreferrer">Event</a>{% endif %}
+            {% if page.slides_url %}<a href="{{ page.slides_url }}" target="_blank" rel="noopener noreferrer">Slides</a>{% endif %}
+            {% if page.video_url %}<a href="{{ page.video_url }}" target="_blank" rel="noopener noreferrer">Video</a>{% endif %}
+          </nav>
+        {% endif %}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 

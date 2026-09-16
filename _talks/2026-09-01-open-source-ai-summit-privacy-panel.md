@@ -1,7 +1,6 @@
 ---
 title: "Privacy Panel, Open Source AI Summit"
-collection: talks
-type: "Panelist"
+kind: "Panelist"
 permalink: /talks/2026-09-01-open-source-ai-summit-privacy-panel
 venue: "Open Source AI Summit"
 date: 2026-09-01

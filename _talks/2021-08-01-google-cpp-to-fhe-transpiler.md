@@ -1,7 +1,6 @@
 ---
 title: "Google C++ to FHE Transpiler"
-collection: talks
-type: "Meetup Talk"
+kind: "Meetup Talk"
 permalink: /talks/2021-08-01-google-cpp-to-fhe-transpiler
 venue: "fhe.org meetup"
 date: 2021-08-01

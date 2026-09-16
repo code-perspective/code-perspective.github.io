@@ -1,12 +1,11 @@
 ---
 title: "HEIR: A Universal Compiler for Homomorphic Encryption"
-collection: publications
-category: manuscripts
+kind: paper
 permalink: /publication/2025-08-14-HEIR-Compiler
-excerpt: 'Homomorphic Encryption Intermediate Representation (HEIR), a unified approach to building homomorphic encryption (HE) compilers'
+description: 'Homomorphic Encryption Intermediate Representation (HEIR), a unified approach to building homomorphic encryption (HE) compilers.'
 date: 2025-08-14
 venue: 'github/google/heir'
-paperurl: 'https://arxiv.org/abs/2508.11095'
+paper_url: 'https://arxiv.org/abs/2508.11095'
 citation: 'Asra Ali and Jaeho Choi and Bryant Gipson and Shruthi Gorantala
               and Jeremy Kun and Wouter Legiest and Lawrence Lim and Alexander
               Viand and Meron Zerihun Demissie and Hongren Zheng. (2025). &quot;HEIR: A Universal Compiler for Homomorphic Encryption.&quot; '

@@ -1,7 +1,6 @@
 ---
 title: "FHE Compilers and Intermediate Representations"
-collection: talks
-type: "Invited Talk"
+kind: "Invited Talk"
 permalink: /talks/2023-03-01-fhe-compilers-intermediate-representations
 venue: "6th HomomorphicEncryption.org Standards Meeting"
 date: 2023-03-01

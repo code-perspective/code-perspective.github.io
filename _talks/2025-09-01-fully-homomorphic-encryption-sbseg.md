@@ -1,7 +1,6 @@
 ---
 title: "Fully Homomorphic Encryption"
-collection: talks
-type: "Invited Talk"
+kind: "Invited Talk"
 permalink: /talks/2025-09-01-fully-homomorphic-encryption-sbseg
 venue: "Brazilian Symposium on Cybersecurity"
 date: 2025-09-01

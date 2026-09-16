@@ -1,7 +1,6 @@
 ---
 title: "HEIR Hardware and Benchmarking"
-collection: talks
-type: "Invited Talk"
+kind: "Invited Talk"
 permalink: /talks/2025-09-01-heir-hardware-benchmarking
 venue: "fhe.org hardware day"
 date: 2025-09-01

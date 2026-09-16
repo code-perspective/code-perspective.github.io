@@ -1,0 +1,40 @@
+{% assign entry = include.entry %}
+{% assign variant = include.variant %}
+{% assign title = entry.title | markdownify | remove: "<p>" | remove: "</p>" %}
+
+<div class="timeline-list__item">
+  <article class="timeline-entry" itemscope itemtype="{% if variant == 'talk' %}https://schema.org/Event{% else %}https://schema.org/ScholarlyArticle{% endif %}">
+    <time class="timeline-entry__date" datetime="{{ entry.date | date: '%Y-%m-%d' }}" itemprop="{% if variant == 'talk' %}startDate{% else %}datePublished{% endif %}">
+      <span class="timeline-entry__month">{{ entry.date | date: '%b' }}</span>
+      <span class="timeline-entry__year">{{ entry.date | date: '%Y' }}</span>
+    </time>
+
+    <div class="timeline-entry__body">
+      <h2 class="timeline-entry__title" itemprop="{% if variant == 'talk' %}name{% else %}headline{% endif %}">{{ title }}</h2>
+
+      <p class="timeline-entry__meta">
+        {% if variant == 'talk' %}
+          {% if entry.kind %}<span>{{ entry.kind }}</span>{% endif %}
+          {% if entry.venue %}<span>{{ entry.venue }}</span>{% endif %}
+          {% if entry.location %}<span itemprop="location">{{ entry.location }}</span>{% endif %}
+        {% elsif entry.venue %}
+          <span>Published in <i itemprop="publisher">{{ entry.venue }}</i></span>
+        {% endif %}
+      </p>
+
+      {% if entry.description %}
+        <p class="timeline-entry__description" itemprop="description">{{ entry.description | markdownify | strip_html | strip_newlines }}</p>
+      {% endif %}
+
+      {% if entry.event_url or entry.paper_url or entry.slides_url or entry.video_url or entry.resources %}
+        <nav class="timeline-entry__links" aria-label="Resources for {{ entry.title | escape }}">
+          {% if entry.event_url %}<a href="{{ entry.event_url }}" target="_blank" rel="noopener noreferrer">Event</a>{% endif %}
+          {% if entry.paper_url %}<a href="{{ entry.paper_url }}" target="_blank" rel="noopener noreferrer">{% if entry.kind == 'patent' %}Patent{% else %}Paper{% endif %}</a>{% endif %}
+          {% if entry.slides_url %}<a href="{{ entry.slides_url }}" target="_blank" rel="noopener noreferrer">Slides</a>{% endif %}
+          {% if entry.video_url %}<a href="{{ entry.video_url }}" target="_blank" rel="noopener noreferrer">Video</a>{% endif %}
+          {% for resource in entry.resources %}<a href="{{ resource.url }}" target="_blank" rel="noopener noreferrer">{{ resource.label }}</a>{% endfor %}
+        </nav>
+      {% endif %}
+    </div>
+  </article>
+</div>

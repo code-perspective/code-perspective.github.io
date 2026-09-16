@@ -1,11 +1,11 @@
 ---
 title: "Performance analysis of Format Preserving Encryption (FIPS PUBS 74-8) over block ciphers for numeric data"
-collection: publications
-category: conferences
+kind: paper
 permalink: /publication/2013-09-21-fpe-performance-analysis
 date: 2013-09-21
 venue: 'International Conference on Computer and Communication Technology 2013'
-paperurl: 'https://ieeexplore.ieee.org/document/6749626'
+description: 'A performance analysis of format-preserving encryption over block ciphers for numeric data.'
+paper_url: 'https://ieeexplore.ieee.org/document/6749626'
 citation: 'K. Mallaiah, S. Ramachandram and S. Gorantala. (2013). &quot;Performance analysis of Format Preserving Encryption (FIPS PUBS 74-8) over block ciphers for numeric data.&quot; <i>2013 4th International Conference on Computer and Communication Technology (ICCCT), Allahabad, India</i>. 1(3).'
 ---
 
