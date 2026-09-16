@@ -1,12 +1,11 @@
 ---
 title: "Adapting AlphaEvolve for Optimizing Fully Homomorphic Encryption on TPUs"
-collection: publications
-category: conferences
+kind: paper
 permalink: /publication/2026-05-01-AlphaEvolve-FHE-TPUs
-excerpt: 'Adapting AlphaEvolve to optimize fully homomorphic encryption workloads on TPUs.'
+description: 'Adapting AlphaEvolve to optimize fully homomorphic encryption workloads on TPUs.'
 date: 2026-05-01
 venue: 'MLArchSys Workshop, ISCA 2026'
-paperurl: 'https://arxiv.org/abs/2605.14718'
+paper_url: 'https://arxiv.org/abs/2605.14718'
 citation: 'Shruthi Gorantala et al. (2026). &quot;Adapting AlphaEvolve for Optimizing Fully Homomorphic Encryption on TPUs.&quot; <i>MLArchSys Workshop, ISCA 2026</i>.'
 resources:
   - label: "Workshop"

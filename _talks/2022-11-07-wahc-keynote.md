@@ -1,7 +1,6 @@
 ---
 title: "Transpilers and the future of FHE"
-collection: talks
-type: "Keynote"
+kind: "Keynote"
 permalink: /talks/2022-11-07-wahc-keynote
 venue: "WAHC 2022 - 10th Workshop on Encrypted Computing & Applied Homomorphic Cryptography"
 date: 2022-11-07

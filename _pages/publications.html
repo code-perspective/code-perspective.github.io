@@ -9,18 +9,16 @@ author_profile: true
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
-
-<div class="publication-list talk-list">
+<div class="timeline-list">
   {% for post in site.publications reversed %}
-    {% unless post.category == 'patents' %}
-      {% include archive-single-publication.html %}
+    {% unless post.kind == 'patent' %}
+      {% include timeline-entry.html entry=post variant="publication" %}
     {% endunless %}
   {% endfor %}
 
   {% for post in site.publications reversed %}
-    {% if post.category == 'patents' %}
-      {% include archive-single-publication.html %}
+    {% if post.kind == 'patent' %}
+      {% include timeline-entry.html entry=post variant="publication" %}
     {% endif %}
   {% endfor %}
 </div>

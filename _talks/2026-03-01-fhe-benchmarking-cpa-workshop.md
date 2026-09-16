@@ -1,7 +1,6 @@
 ---
 title: "FHE Benchmarking"
-collection: talks
-type: "Invited Talk"
+kind: "Invited Talk"
 permalink: /talks/2026-03-01-fhe-benchmarking-cpa-workshop
 venue: "CPA workshop, ASPLOS 2026"
 date: 2026-03-01
