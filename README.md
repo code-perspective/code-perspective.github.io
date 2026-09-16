@@ -2,6 +2,8 @@
 
 Personal website built with Jekyll and hosted on GitHub Pages.
 
+See [AGENTS.md](AGENTS.md) for the repository structure, content schemas, and detailed add, update, and deletion workflows for both human contributors and coding agents.
+
 ## Local development
 
 Install Ruby and Bundler once, then run:
